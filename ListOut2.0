@@ -1,4 +1,4 @@
-#THIS VERSION OF LISTY HAS A GUI AND CAN BE USED IN ANY COMPUTER WITH PYTHON INSTALLED!!!
+#THIS VERSION OF LISTOUT HAS A GUI AND CAN BE USED IN ANY COMPUTER WITH PYTHON INSTALLED!!!
 #!/usr/bin/python
 
 from tkinter import *
@@ -6,7 +6,7 @@ import tkFileDialog
 import time
 
 window = Tk()
-window.title("Listy 2.0")
+window.title("ListOut 2.0")
 
 item_num = 0
 f = None
@@ -14,7 +14,7 @@ f = None
 def SaveAs():
 	global f
 	f = tkFileDialog.asksaveasfile(mode='w', defaultextension=".txt")
-	f.write("Made with Listy 2.0\n\n")
+	f.write("Made with ListOut 2.0\n\n")
 	
 def CheckOption(event):
 	global file
