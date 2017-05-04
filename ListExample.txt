@@ -1,0 +1,15 @@
+Made with Listy 2.0
+
+===START===
+---MY DAY---
+1- wake up;
+2- sleep again;
+3- dream with computers;
+4- eat alot;
+---MAKE A SUBTITLE---
+(that was a subtitle)
+5- those things in "()" are comments;
+6- i think you got it;
+(yeah you did you are very smart)
+7- ok im done;
+===END===
