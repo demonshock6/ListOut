@@ -12,33 +12,33 @@ and thats what i did!
 Listy is very simple to use, select the type of list item you want(regular item, title, subtitle or comment) and type what you
 want, done!
 
-each type of item has its own output on the final list output:
+each type of item has its own syntax on the final list output:
 
-Regular item : this is just a regular list item wich contains a number to its left.
+**Regular item :** this is just a regular list item wich contains a number to its left.
 
   example :
-    1- regular item;
+    **1- regular item;
     2- example;
-    3- number three;
+    3- number three;**
     
-Title : the title is a all caps list item used when you want to make groups of items and it also resets the item number to 1.
+**Title :** the title is a all caps list item used when you want to make groups of items and it also resets the item number to 1.
 
   example :
-    ===TITLE===
+   ** ===TITLE===**
     1- regular item;
 
-Subtitle : the subtitle is a all cpas list item used when you want to make subgroups of items but it doesnt reset the item number
+**Subtitle :** the subtitle is a all cpas list item used when you want to make subgroups of items but it doesnt reset the item number
 to 1.
 
   example:
-    ---SUBTITLE---
+    **---SUBTITLE---**
     4- regular item;
 
-Comment : the comment can be used when you want to describe a list item with more detail.
+**Comment :** the comment can be used when you want to describe a list item with more detail.
 
   example:
     1- comment;
-    (THIS IS A COMMENT)
+    **(THIS IS A COMMENT)**
     
 # List example
 
