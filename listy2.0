@@ -1,3 +1,4 @@
+#THIS VERSION OF LISTY HAS A GUI AND CAN BE USED IN ANY COMPUTER WITH PYTHON INSTALLED!!!
 #!/usr/bin/python
 
 from tkinter import *
