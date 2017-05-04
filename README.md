@@ -16,45 +16,45 @@ each type of item has its own syntax on the final list output:
 
 **Regular item :** this is just a regular list item wich contains a number to its left.
 
-  example :
-    **1- regular item;
-    2- example;
-    3- number three;**
+  example :<br>
+    **1- regular item;<br>
+   2- example;<br>
+   3- number three;**
     
 **Title :** the title is a all caps list item used when you want to make groups of items and it also resets the item number to 1.
 
-  example :
-   ** ===TITLE===**
+  example :<br>
+   **===TITLE===**<br>
     1- regular item;
 
 **Subtitle :** the subtitle is a all cpas list item used when you want to make subgroups of items but it doesnt reset the item number
 to 1.
 
-  example:
-    **---SUBTITLE---**
+  example:<br>
+    **---SUBTITLE---**<br>
     4- regular item;
 
 **Comment :** the comment can be used when you want to describe a list item with more detail.
 
-  example:
-    1- comment;
+  example:<br>
+    1- comment;<br>
     **(THIS IS A COMMENT)**
     
 # List example
 
-===START===
----MY DAY---
-1- wake up;
-2- think about computers;
-3- make lists;
-4- eat alot;
-5- sleep even more;
----MY NIGHT---
-6- drink some coffee;
-7- write some python;
-(yeah im still trying to figure the list script kinda thing)
-8- comment number 7;
-(i think i just commented number 8 aswell)
-9- maybe i should end it here;
-10- yeah i think you get the point;
+===START===<br>
+---MY DAY---<br>
+1- wake up;<br>
+2- think about computers;<br>
+3- make lists;<br>
+4- eat alot;<br>
+5- sleep even more;<br>
+---MY NIGHT---<br>
+6- drink some coffee;<br>
+7- write some python;<br>
+(yeah im still trying to figure the list script kinda thing)<br>
+8- comment number 7;<br>
+(i think i just commented number 8 aswell)<br>
+9- maybe i should end it here;<br>
+10- yeah i think you get the point;<br>
 ===END===
