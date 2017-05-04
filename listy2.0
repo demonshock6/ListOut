@@ -1,0 +1,69 @@
+#!/usr/bin/python
+
+from tkinter import *
+import tkFileDialog
+import time
+
+window = Tk()
+window.title("Listy 2.0")
+
+item_num = 0
+f = None
+
+def SaveAs():
+	global f
+	f = tkFileDialog.asksaveasfile(mode='w', defaultextension=".txt")
+	f.write("Made with Listy 2.0\n\n")
+	
+def CheckOption(event):
+	global file
+	global item_num
+	print(opt.get())
+	if opt.get() == "ITEM":
+		item_num += 1
+		text = txt.get()
+		print(str(item_num) + "- " + text + ";")
+		f.write(str(item_num) + "- " + text + ";\n")
+		txt.delete(0, END)
+	elif opt.get() == "TITLE":
+		item_num = 0
+		text = txt.get()
+		print("===" + text.upper() + "===\n")
+		f.write("===" + text.upper() + "===\n")
+		txt.delete(0, END)
+	elif opt.get() == "SUBTITLE":
+		text = txt.get()
+		print("---" + text.upper() + "---\n")
+		f.write("---" + text.upper() + "---\n")
+		txt.delete(0, END)
+	elif opt.get() == "COMMENT":
+		text = txt.get()
+		print("(" + text + ")\n")
+		f.write("(" + text + ")\n")
+		txt.delete(0, END)
+
+btn = Button(window, text="Choose a path", command=SaveAs)
+btn.grid(row=0, column=0, columnspan=6)
+
+lbl1 = Label(window, text="Item :")
+lbl1.grid(row=1, column=0, sticky=W)
+
+txt = Entry(window)
+txt.bind("<Return>", CheckOption)
+txt.grid(row=1, column=1, columnspan=4)
+
+OPTIONS = [
+	("Regular Item", "ITEM", 0, 2, 3, "W"),
+	("Title", "TITLE", 3, 2, 3, "W"),
+	("SubTitle", "SUBTITLE", 0, 3, 3, "W"),
+	("Comment", "COMMENT", 3, 3, 3, "W"),
+]
+
+opt = StringVar()
+opt.set("ITEM")
+
+for text, option, column, row, span, stick in OPTIONS:
+	itemCheck = Radiobutton(window, text=text, variable=opt, value=option)
+	itemCheck.grid(row=row, column=column, columnspan=span, sticky=stick)
+
+window.mainloop()	

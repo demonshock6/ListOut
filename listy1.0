@@ -1,0 +1,87 @@
+#!/usr/bin/python
+#Created at 02/05/2017 by Demonshock6
+
+#IMPORT THE NEEDED MODULES
+import time, subprocess
+
+#CLEAR THE CONSOLE
+subprocess.call("clear", shell=True)
+
+#WELCOME AND BREIF THE USER
+print("Welcome!\n")
+print("Enter the items you need to make a list\nType 'HELP' for more options\n")
+
+#SET THE NAME OF THE FILE
+name = raw_input("name: ")
+name = name + ".txt"
+
+#SKIP A LINE
+print
+
+#PATH TO THE FILE (CHANGE THIS IF YOU WANT TO SAVE FILE IN A DIFERENT DEFAULT PATH)
+path = "/home/demonshock/Desktop/" + name
+
+#SET ITEM NUMBER
+item_num = 0
+
+#START LOOPING
+loop = True
+while loop == True:
+
+	#SET ITEM VALUE
+	item = raw_input("Item: ")
+
+	#EXECUTE HELP FUNCTION
+	if item == "HELP":
+		print("===HELP===\nTITLE [introduce a all caps title and resets the item number to 0]\nSUBTITLE [introduce a all caps title but doesn't reset the item number]\nCOMMENT [introduces a comment between '()']\nPATH [change the default path of the file]\nCURRENT_PATH [displays the current path to the file]\nEXIT [terminate the list]\n==========")
+
+	#EXECUTE TITLE FUNCTION
+	elif item == "TITLE":
+		title = raw_input("Title: ")
+		title = "===" + title.upper() + "==="
+		text_file = open(path, "a")
+		text_file.write(title + "\n")
+		item_num = 0
+		print(title)
+
+	#EXECUTE SUBTITLE FUNCTION
+	elif item == "SUBTITLE":
+		subtitle = raw_input("SubTitle: ")
+		subtitle = "---" + subtitle.upper() + "---"
+		text_file = open(path, "a")
+		text_file.write(subtitle + "\n")
+		print(subtitle)
+
+	#EXECUTE COMMENT FUNCTION
+	elif item == "COMMENT":
+		comment = raw_input("comment: ")
+		comment = "(" + comment + ")"
+		text_file = open(path, "a")
+		text_file.write(comment + "\n")
+		print(comment)
+
+	#EXECUTE PATH FUNCTION
+	elif item == "PATH":
+		print("Current Path = " + path)
+		path = raw_input("Path: ")
+
+	#EXECUTE THE CURRENT_PATH FUNCTION
+	elif item == "CURRENT_PATH":
+		print("Current Path = " + path)
+
+	#EXECUTE EXIT FUNCTION
+	elif item == "EXIT":
+		loop = False
+
+	#ADD ANOTHER REGULAR ITEM	
+	else:	
+		item_num += 1
+		list_item = str(item_num) + "- " + item + ";"
+		print(list_item)
+		text_file = open(path, "a")
+		text_file.write(list_item + "\n")
+		time.sleep(.5)
+		
+#BREAK THE LOOP
+print("Script ended!")
+print("List saved in " + path)
