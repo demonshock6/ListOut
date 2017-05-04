@@ -1,15 +1,15 @@
-# Listy
+# ListOut
 Ever had the idea to do a program and got confused and didnt knew where to start?
-fear no more my dear friend, Listy is here for you!
+fear no more my dear friend, ListOut is here for you!
 
-Listy is a open-source project, made to help people organize their actions, Listy creates lists in a easy way
+ListOut is a open-source project, made to help people organize their actions, ListOut creates lists in a easy way
 without the need of you numerating each item and creating titles, subtitles and comments automaticaly.
 
 I had the idea to work on this project cause im very disorganized, and since i like programming, i always had to write this huge
 algorithms with all the steps and program functions, wich was a pain in the butt, so i thought, what if i could automate this?
 and thats what i did!
 
-Listy is very simple to use, select the type of list item you want(regular item, title, subtitle or comment) and type what you
+ListOut is very simple to use, select the type of list item you want(regular item, title, subtitle or comment) and type what you
 want, done!
 
 each type of item has its own syntax on the final list output:
